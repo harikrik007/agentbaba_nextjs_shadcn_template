@@ -10,6 +10,8 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    // DISABLE optimization in development to save CPU
+    unoptimized: process.env.NODE_ENV === 'development',
   },
 }
 
