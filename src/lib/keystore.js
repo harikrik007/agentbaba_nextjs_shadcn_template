@@ -68,7 +68,7 @@ class KeystoreClient {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'X-API-Key': this.apiKey,
+                        'X-API-Key': `Key ${this.apiKey}`,
                     },
                     body: JSON.stringify({
                         data: {
